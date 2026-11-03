@@ -13,14 +13,18 @@ This is particularly effective for **activity cliffs** — structurally similar 
 
 ## Results on MoleculeACE Benchmark (30 datasets)
 
-| Model | Overall RMSE | Cliff RMSE |
-|-------|:----------:|:--------:|
-| REMOIM-Graphormer (published SOTA) | 0.647 | 0.747 |
-| SVM + ECFP | 0.662 | 0.750 |
-| **ECFP + Delta Pred (ours)** | **TBD** | **TBD** |
-| RF + ECFP | 0.704 | 0.786 |
-| GIN + Delta Pred (ours) | 0.703 | 0.818 |
-| GIN Baseline | 0.801 | 0.854 |
+| Model | Overall RMSE | Cliff RMSE | Source |
+|-------|:----------:|:--------:|:------:|
+| REMOIM-Graphormer (SOTA) | 0.647 | 0.747 | published |
+| SVM + ECFP | 0.662 | 0.750 | ours |
+| XGBoost + ECFP | 0.694 | 0.775 | ours |
+| RF + ECFP | 0.704 | 0.786 | ours |
+| **GIN + Delta Pred (ours)** | **0.708** | **0.822** | ours |
+| ECFP + Delta Pred (ours) | 0.720 | 0.831 | ours |
+| D-MPNN | 0.750 | 0.829 | published |
+| MLP + ECFP | 0.768 | 0.820 | ours |
+| GIN Baseline | 0.808 | 0.869 | ours |
+| GIN (published) | 0.815 | 0.901 | published |
 
 ## Experiments
 
